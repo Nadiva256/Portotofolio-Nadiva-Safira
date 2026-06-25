@@ -1,0 +1,249 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* WARNA */
+:root {
+  --hitam: #121212;
+  --hitam2: #1e1e1e;
+  --kuning: #ffd60a;
+  --kuning2: #ffea00;
+  --putih: #ffffff;
+  --abu: #cccccc;
+}
+
+/* BODY */
+body {
+  background: var(--hitam);
+  color: var(--putih);
+  line-height: 1.7;
+}
+
+/* CONTAINER */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* NAVBAR */
+.navbar {
+  background: var(--hitam2);
+  border-bottom: 2px solid var(--kuning);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.logo {
+  color: var(--kuning);
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: var(--putih);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--kuning);
+}
+
+/* HERO */
+.hero {
+  padding: 80px 0;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.hero-teks h2 span {
+  color: var(--kuning);
+}
+
+.peran {
+  color: var(--kuning);
+  margin: 10px 0;
+}
+
+.deskripsi {
+  color: var(--abu);
+}
+
+/* FOTO */
+.hero-gambar img {
+  width: 250px;
+  border-radius: 50%;
+  border: 3px solid var(--kuning);
+}
+
+/* BUTTON */
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.utama {
+  background: var(--kuning);
+  color: black;
+  font-weight: bold;
+}
+
+.utama:hover {
+  background: var(--kuning2);
+}
+
+.garis {
+  border: 2px solid var(--kuning);
+  color: var(--kuning);
+}
+
+.garis:hover {
+  background: var(--kuning);
+  color: black;
+}
+
+/* SECTION */
+section {
+  padding: 60px 0;
+}
+
+.judul {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.judul span {
+  color: var(--kuning);
+}
+
+/* ABOUT */
+.about {
+  background: var(--hitam2);
+  border-radius: 10px;
+}
+
+.about p {
+  margin-bottom: 15px;
+  color: var(--abu);
+}
+
+.info p {
+  margin-top: 8px;
+  color: var(--putih);
+}
+
+/* SKILL */
+.skill-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: var(--hitam2);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+.card i {
+  font-size: 30px;
+  color: var(--kuning);
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  color: var(--abu);
+}
+
+/* PROJECT */
+.project-list {
+  display: grid;
+  gap: 20px;
+}
+
+.project-card {
+  background: var(--hitam2);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 4px solid var(--kuning);
+}
+
+.teknologi {
+  color: var(--kuning);
+  font-size: 14px;
+}
+
+/* TESTIMONI */
+.testimoni-list {
+  display: grid;
+  gap: 20px;
+}
+
+.testimoni-card {
+  background: var(--hitam2);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.testimoni-card img {
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid var(--kuning);
+}
+
+/* CONTACT */
+.contact-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #111;
+  border: 1px solid #333;
+  color: white;
+  border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  color: var(--kuning);
+  text-align: center;
+  padding: 15px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+}
